@@ -1,0 +1,49 @@
+document.addEventListener('click', e=>{
+    const isDropdownbtn = e.target.matches('[data-dropdown-button]');
+    if (!isDropdownbtn && e.target.closest('[data-dropdown')!= null);
+    return
+
+    let currentDropdow
+
+    if (isDropdownbtn){
+        currentDropdow = e.target.closest('[data-dropdown]');
+        currentDropdow.classList.toggle('active');
+    }
+
+    document.querySelectorAll('[data-dropdown].active').forEach(dropdown =>{
+        if (dropdown === currentDropdow)
+        return
+        dropdown.classList.remove('active');
+    });
+})
+
+
+
+
+
+
+
+
+.dropdown{
+    position:relative;
+}
+
+.dropdownMenu{
+    position:absolute;
+    width: 130px;
+    right:0;
+    top: calc(100% +.25rem);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+    opacity: 0.5;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.dropdown.active > .link + .dropdownMenu{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}

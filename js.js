@@ -53,16 +53,13 @@ function gridSizeNinetySix() {
 }
 
 function sixteen(){
-    gridBox.classList.remove('gridSize');
     gridSizeSixteen();
 }
 
 function fourtyEight(){
-    gridBox.classList.remove('gridSize');
     gridSizeFourtyEight();
 }
 
 function ninetySix(){
-    gridBox.classList.remove('gridSize');
     gridSizeNinetySix();
 }

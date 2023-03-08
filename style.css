@@ -1,3 +1,150 @@
-.containerOne{
+.containerThree {
     border: solid black;
 }
+
+body {
+    background-image: url("images/background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
+.containerTwo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+ button {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 140px;
+    height: 60px;
+    border: solid black;
+    border-radius: 5px;
+}
+
+.link:hover{
+    color:magenta
+}
+
+
+button:hover{
+    
+    color: magenta;
+}
+
+.containerThree {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#gridBox {
+    text-align: center;
+    background-color: white;
+    border: solid black;
+    width: 960px;
+    height: 960px;
+    display:grid;
+    background-color: white;
+    
+}
+
+.sixteen{
+}
+
+.rainbow {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, blue, #e3e81d, #1de840, #1ddde8, red, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 6s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        background-position: 0% 82%
+    }
+
+    50% {
+        background-position: 100% 19%
+    }
+
+    100% {
+        background-position: 0% 82%
+    }
+}
+
+.black {
+    color: white;
+    background-color: black;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 20px;
+    border: solid black;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownMenu {
+    background: white;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    
+    z-index: 1;
+  }
+  
+  .dropdownMenu p {
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown p:hover {
+    color: magenta;}
+  
+  .show {display: block;}
+
+
+#gridBox{
+    display: grid;
+    background-color: white;
+    padding: 1px;
+}
+
+  .gridSize{
+    border: 1px solid lightgrey;
+    text-align: center;
+    padding: auto;
+  }
+
+  

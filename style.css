@@ -17,16 +17,13 @@ h1 {
 }
 
 .containerOne {
-    display: flexbox;
+
     padding: 30px;
     text-align: center;
 
 }
 
 .containerTwo {
-    display: flex;
-    justify-content: center;
-    align-content: center;
     text-align: center;
     padding: 15px;
 }
@@ -55,7 +52,7 @@ button:hover {
 
 .containerThree {
     padding: 20px;
-    display: flex;
+   
     justify-content: center;
     align-content: center;
 }
@@ -64,8 +61,8 @@ button:hover {
     text-align: center;
     background-color: white;
     border: solid black;
-    width: 960px;
-    height: 960px;
+    width: 780px;
+    height: 780px;
     display: grid;
     background-color: white;
 

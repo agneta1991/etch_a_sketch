@@ -39,6 +39,7 @@ function fourtyEight() {
             gridBox.appendChild(content);
         }
     }
+
     isBtnClicked = true;
 
 }
@@ -59,14 +60,12 @@ function ninetySix() {
 function refresh() {
     location.reload();
 }
-
-function rainbowColor() {
-    gridBox.addEventListener('mouseover', color);
-    function color(){
+function color(){
     document.getElementsByClassName('gridSize').style.backgroundColor='red';
-}}
-
-
+}
+function rainbowColor(){
+    document.getElementsByClassName('.gridSize').style.backgroundColor='red';
+}
 function blackColor() {
     gridBox.addEventListener('mouseover', color);
     document.getElementsByClassName('gridSize').classList.add('blackColor');

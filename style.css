@@ -52,7 +52,7 @@ button:hover {
 
 .containerThree {
     padding: 20px;
-   
+    display: flex;
     justify-content: center;
     align-content: center;
 }
@@ -61,8 +61,8 @@ button:hover {
     text-align: center;
     background-color: white;
     border: solid black;
-    width: 780px;
-    height: 780px;
+    width: 7600px;
+    height: 760px;
     display: grid;
     background-color: white;
 

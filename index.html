@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Etch-a-scetch</title>
-    <link rel="styleSheet" href='style.css'>
+    <link rel="stylesheet" href='style.css'>
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
     <script src="js.js" defer></script>
     <div class="containerOne">
         <h1>Etch a Sketch</h1>
+        <h2>Etch-a-scetch is a drawing game. <br>
+            Choose your colour, and the size of the grid. Move the <br>
+            mouse over the grid and you are drawing! To change the <br>
+            grid size, reset and start with your new drawing.</h2>
     </div>
     <div class="containerTwo">
-        <button class="rainbow">RAINBOW</button>
-        <button class="black">BLACK</button>
-        <button class="erase">ERASE</button>
         <div class='dropdown'>
             <button onclick = 'myFunction()'class="dropbtn"> GRID SIZE</button>
                 <div id='myDropdown' class="dropdownMenu">
@@ -27,7 +28,11 @@
                     <p onclick='ninetySix()' class ="sizeThree">96x96</p>
             </div>
         </div>
-        <button class="reset">RESET</button>
+        <button onclick='rainbowColor()' class="rainbow">RAINBOW</button>
+        <button onclick ='blackColor()' class="black">BLACK</button>
+        <button onclick='whiteColor()' class="erase">ERASE</button>
+        
+        <button onclick="refresh()" class="reset">RESET</button>
             
     </div>
     <div class="containerThree">

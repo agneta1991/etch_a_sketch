@@ -1,8 +1,7 @@
 const gridBox = document.querySelector('#gridBox');
-
+let isBtnClicked = false;
 
 function myFunction() {
-
     document.getElementById('myDropdown').classList.toggle('show');
 }
 
@@ -19,47 +18,65 @@ window.onclick = function (event) {
     }
 }
 
-function gridSizeSixteen() {
-    for (let i = 0; i < 256; i++) {
-        const content = document.createElement('div');
-        content.classList.add('gridSize');
-        gridBox.style.gridTemplateColumns = 'repeat(16, auto)';
+function sixteen() {
+    if (isBtnClicked === false) {
+        for (let i = 0; i < 256; i++) {
+            const content = document.createElement('div');
+            content.className= 'gridSize';
+            gridBox.style.gridTemplateColumns = 'repeat(16, auto)';
+            gridBox.appendChild(content);
+        }
+    }
+    isBtnClicked = true;
+}
 
-        gridBox.appendChild(content);
-    };
+function fourtyEight() {
+    if (isBtnClicked === false) {
+        for (let i = 0; i < 2304; i++) {
+            const content = document.createElement('div');
+            content.className='gridSize';
+            gridBox.style.gridTemplateColumns = 'repeat(48, auto)';
+            gridBox.appendChild(content);
+        }
+    }
+    isBtnClicked = true;
 
 }
 
-function gridSizeFourtyEight() {
-    for (let i = 0; i < 2304; i++) {
-        const content = document.createElement('div');
-        content.classList.add('gridSize');
-        gridBox.style.gridTemplateColumns = 'repeat(48, auto)';
-
-        gridBox.appendChild(content);
-    };
-
-}
-
-function gridSizeNinetySix() {
-    for (let i = 0; i < 9216; i++) {
-        const content = document.createElement('div');
-        content.classList.add('gridSize');
-        gridBox.style.gridTemplateColumns = 'repeat(96, auto)';
-
-        gridBox.appendChild(content);
-    };
+function ninetySix() {
+    if (isBtnClicked === false) {
+        for (let i = 0; i < 9216; i++) {
+            const content = document.createElement('div');
+            content.className='gridSize';
+            gridBox.style.gridTemplateColumns = 'repeat(96, auto)';
+            gridBox.appendChild(content);
+        }
+    }
+    isBtnClicked = true;
 
 }
 
-function sixteen(){
-    gridSizeSixteen();
+function refresh() {
+    location.reload();
 }
 
-function fourtyEight(){
-    gridSizeFourtyEight();
+function rainbowColor() {
+    gridBox.addEventListener('mouseover', color);
+    function color(){
+    document.getElementsByClassName('gridSize').style.backgroundColor='red';
+}}
+
+
+function blackColor() {
+    gridBox.addEventListener('mouseover', color);
+    document.getElementsByClassName('gridSize').classList.add('blackColor');
+}
+function whiteColor() {
+    gridBox.addEventListener('mouseover', color);
+    document.getElementsByClassName('gridSize').classList.add('whiteColor');
 }
 
-function ninetySix(){
-    gridSizeNinetySix();
-}
+
+
+
+

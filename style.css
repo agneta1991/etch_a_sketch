@@ -7,13 +7,20 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Special Elite', cursive;
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Special Elite', cursive;
     font-size: 100px;
     text-align: center;
+}
+
+.containerOne {
+    display: flexbox;
+    padding: 30px;
+    text-align: center;
+
 }
 
 .containerTwo {
@@ -21,10 +28,11 @@ h1 {
     justify-content: center;
     align-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
- button {
+button {
+    font-family: 'Special Elite', cursive;
     background-color: white;
     color: black;
     font-weight: bolder;
@@ -35,13 +43,13 @@ h1 {
     border-radius: 5px;
 }
 
-.link:hover{
-    color:magenta
+.link:hover {
+    color: magenta
 }
 
 
-button:hover{
-    
+button:hover {
+
     color: magenta;
 }
 
@@ -58,13 +66,11 @@ button:hover{
     border: solid black;
     width: 960px;
     height: 960px;
-    display:grid;
+    display: grid;
     background-color: white;
-    
+
 }
 
-.sixteen{
-}
 
 .rainbow {
     background: linear-gradient(124deg, #ff2400, #e81d1d, blue, #e3e81d, #1de840, #1ddde8, red, #dd00f3, #dd00f3);
@@ -98,18 +104,19 @@ button:hover{
     font-size: 20px;
     border: solid black;
     cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
     background-color: white;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdownMenu {
+}
+
+.dropdownMenu {
     background: white;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -117,34 +124,51 @@ button:hover{
     position: absolute;
     min-width: 160px;
     overflow: auto;
-    
     z-index: 1;
-  }
-  
-  .dropdownMenu p {
+}
+
+.dropdownMenu p {
     color: black;
     padding: 4px;
     font-weight: bold;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown p:hover {
-    color: magenta;}
-  
-  .show {display: block;}
+}
 
+.dropdown p:hover {
+    color: magenta;
+}
 
-#gridBox{
+.show {
+    display: block;
+}
+
+#gridBox {
     display: grid;
     background-color: white;
     padding: 1px;
 }
 
-  .gridSize{
+.gridSize {
     border: 1px solid lightgrey;
     text-align: center;
     padding: auto;
-  }
+}
+.reset{
+    background-color: rgba(32, 100, 178, 0.418);
+}
+.reset:hover{
+    color: white;
+}
 
-  
+.rainbowColor{
+    background-color: #ff2400;
+}
+
+.blackColor{
+    background-color: black;
+}
+
+.whiteColor{
+    background-color: white;
+}

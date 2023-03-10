@@ -185,6 +185,7 @@ button:hover {
 }
 
 .rainbowColor{
+    animation-play-state: running;
         -webkit-animation: random 0.1s ease-in;
         animation: random 5s infinite;
    }

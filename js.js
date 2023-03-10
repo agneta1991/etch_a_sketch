@@ -9,8 +9,8 @@ window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
         let dropdowns = document.getElementsByClassName("dropdownMenu");
         let i;
-        for (i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
+        for (i = 0; i < dropdownsTwo.length; i++) {
+            let openDropdown = dropdownsTwo[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
@@ -20,7 +20,7 @@ window.onclick = function (event) {
 
 
 function myFunctionTwo() {
-    document.getElementById('myDropdownTwo').classList.toggle('show');
+    document.getElementById('myDropdownTwo').classList.toggle('showTwo');
 }
 
 window.onclick = function (event) {

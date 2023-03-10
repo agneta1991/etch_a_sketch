@@ -78,6 +78,8 @@ function blackBtn() {
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.remove('whiteColor');
+            individualDiv.classList.remove('rainbowColor');
             individualDiv.classList.add('blackColor');
         })
     })
@@ -88,6 +90,7 @@ function eraseBtn() {
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.remove('rainbowColor');
             individualDiv.classList.add('whiteColor');
         })
     })

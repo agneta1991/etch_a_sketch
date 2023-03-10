@@ -184,7 +184,10 @@ button:hover {
     color: white;
 }
 
+
 .rainbowColor{
+    background-color: #1ddde8;
+    animation-iteration-count: infinite;
     animation-play-state: running;
         -webkit-animation: random 0.1s ease-in;
         animation: random 5s infinite;

@@ -18,6 +18,33 @@ window.onclick = function (event) {
     }
 }
 
+
+function myFunctionTwo() {
+    document.getElementById('myDropdownTwo').classList.toggle('show');
+}
+
+
+
+window.onclick = function (e) {
+    if (!e.target.matches('.dropbtnTwo')) {
+        let dropdownsTwo = document.getElementsByClassName("dropdownMenuTwo");
+        let i;
+        for (i = 0; i < dropdownsTwo.length; i++) {
+            let openDropdown = dropdownsTwo[i];
+            if (openDropdown.classList.contains('showTwo')) {
+                openDropdown.classList.remove('showTwo');
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
 function sixteen() {
     if (isBtnClicked === false) {
         for (let i = 0; i < 256; i++) {

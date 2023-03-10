@@ -24,20 +24,25 @@ h1 {
 }
 
 .containerTwo {
-    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     padding: 15px;
 }
 
 button {
+    margin-left: 2px;
+    margin-right: 2px;
     font-family: 'Special Elite', cursive;
     background-color: white;
     color: black;
-    font-weight: bolder;
-    font-size: 20px;
-    width: 140px;
-    height: 60px;
+    font-weight: bold;
+    font-size: 22px;
+    width: 160px;
+    height: 80px;
     border: solid black;
     border-radius: 5px;
+    
 }
 
 .link:hover {
@@ -89,12 +94,12 @@ button:hover {
     }
 }
 
-.black {
+.blackBtn {
     color: white;
     background-color: black;
 }
 
-.dropbtn {
+.dropbtn, .dropbtnTwo {
     background-color: white;
     color: black;
     padding: 16px;
@@ -103,17 +108,22 @@ button:hover {
     cursor: pointer;
 }
 
+.dropbtnTwo:hover,
+.dropbtnTwo:focus {
+    background-color: white;
+}
+
 .dropbtn:hover,
 .dropbtn:focus {
     background-color: white;
 }
 
-.dropdown {
+.dropdown, .dropdownTwo {
     position: relative;
     display: inline-block;
 }
 
-.dropdownMenu {
+.dropdownMenu, .dropdownMenuTwo {
     background: white;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -125,9 +135,11 @@ button:hover {
 }
 
 .dropdownMenu p {
+    font-size: 16px;
+    text-align: center;
     color: black;
     padding: 4px;
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: none;
     display: block;
 }
@@ -136,7 +148,21 @@ button:hover {
     color: magenta;
 }
 
-.show {
+.dropdownMenuTwo p {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    padding: 4px;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownTwo p:hover {
+    color: magenta;
+}
+
+.show, .showTwo {
     display: block;
 }
 
@@ -159,8 +185,7 @@ button:hover {
 }
 
 .rainbowColor{
-        background-color: blue;
-        -webkit-animation: random 0.1s infinite;
+        -webkit-animation: random 0.1s ease-in;
         animation: random 5s infinite;
    }
    @keyframes  random {
@@ -173,9 +198,11 @@ button:hover {
    }
 
 .blackColor{
+    animation-play-state: paused;
     background-color: black;
 }
 
 .whiteColor{
+    
     background-color: white;
 }

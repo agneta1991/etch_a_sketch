@@ -5,40 +5,16 @@ function myFunction() {
     document.getElementById('myDropdown').classList.toggle('show');
 }
 
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName("dropdownMenu");
-        let i;
-        for (i = 0; i < dropdownsTwo.length; i++) {
-            let openDropdown = dropdownsTwo[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
 
 function myFunctionTwo() {
     document.getElementById('myDropdownTwo').classList.toggle('showTwo');
 }
 
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtnTwo')) {
-        let dropdownsTwo = document.getElementsByClassName("dropdownMenuTwo");
-        let i;
-        for (i = 0; i < dropdownsTwo.length; i++) {
-            let openDropdown = dropdownsTwo[i];
-            if (openDropdown.classList.contains('showTwo')) {
-                openDropdown.classList.remove('showTwo');
-            }
-        }
-    }
-}
 
 
 
 function sixteen() {
+    myFunction();
     if (isBtnClicked === false) {
         for (let i = 0; i < 256; i++) {
             const content = document.createElement('div');
@@ -52,6 +28,7 @@ function sixteen() {
 }
 
 function fourtyEight() {
+    myFunction();
     if (isBtnClicked === false) {
         for (let i = 0; i < 2304; i++) {
             const content = document.createElement('div');
@@ -66,6 +43,7 @@ function fourtyEight() {
 }
 
 function ninetySix() {
+    myFunction();
     if (isBtnClicked === false) {
         for (let i = 0; i < 9216; i++) {
             const content = document.createElement('div');

@@ -69,7 +69,7 @@ button:hover {
 }
 
 
-.rainbow {
+.rainbowBtn {
     background: linear-gradient(124deg, #ff2400, #e81d1d, blue, #e3e81d, #1de840, #1ddde8, red, #dd00f3, #dd00f3);
     background-size: 1800% 1800%;
     -webkit-animation: rainbow 6s ease infinite;
@@ -146,15 +146,15 @@ button:hover {
     padding: 1px;
 }
 
-.gridSize {
+.gridSizeSixteen, .gridSizeFourtyEight, .gridSizeNinetySix {
     border: 1px solid lightgrey;
     text-align: center;
     padding: auto;
 }
-.reset{
+.resetBtn{
     background-color: rgba(32, 100, 178, 0.418);
 }
-.reset:hover{
+.resetBtn:hover{
     color: white;
 }
 

@@ -47,3 +47,41 @@ document.addEventListener('click', e=>{
     transform: translateY(0);
     pointer-events: auto;
 }
+
+
+let gridSize = document.getElementsByClassName('gridSize');
+gridSize.addEventListener('mouseover', blackColor);
+
+
+function rainbowColor(){
+    document.getElementsByClassName('.gridSize').style.backgroundColor='red';
+}
+function blackColor() {
+   
+    document.getElementsByClassName('gridSize').classList.add('blackColor');
+}
+function whiteColor() {
+    gridBox.addEventListener('mouseover', color);
+    document.getElementsByClassName('gridSize').classList.add('whiteColor');
+}
+
+
+
+
+function color(){
+    x= gridBox.querySelectorAll('div.gridSize');
+
+}
+
+
+
+function mouseOver(){
+                content.addEventListener('mouseover', color);}
+
+                function color(){
+                    
+                content.classList.add('rainbowColor');
+            }
+            mouseOver();
+        }
+        gridBox.addEventListener('mouseover', rainbowColor)

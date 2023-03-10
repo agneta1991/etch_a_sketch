@@ -136,7 +136,7 @@ function orangeBtn() {
 
 };
 
-function greenkBtn() {
+function greenBtn() {
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
@@ -146,7 +146,7 @@ function greenkBtn() {
 
 };
 
-function yellowkBtn() {
+function yellowBtn() {
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {

@@ -23,10 +23,8 @@ function myFunctionTwo() {
     document.getElementById('myDropdownTwo').classList.toggle('show');
 }
 
-
-
-window.onclick = function (e) {
-    if (!e.target.matches('.dropbtnTwo')) {
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtnTwo')) {
         let dropdownsTwo = document.getElementsByClassName("dropdownMenuTwo");
         let i;
         for (i = 0; i < dropdownsTwo.length; i++) {
@@ -40,16 +38,11 @@ window.onclick = function (e) {
 
 
 
-
-
-
-
-
 function sixteen() {
     if (isBtnClicked === false) {
         for (let i = 0; i < 256; i++) {
             const content = document.createElement('div');
-            content.className= 'gridSizeSixteen';
+            content.className = 'gridSizeSixteen';
             gridBox.style.gridTemplateColumns = 'repeat(16, auto)';
             gridBox.appendChild(content);
 
@@ -62,7 +55,7 @@ function fourtyEight() {
     if (isBtnClicked === false) {
         for (let i = 0; i < 2304; i++) {
             const content = document.createElement('div');
-            content.className='gridSizeFourtyEight';
+            content.className = 'gridSizeFourtyEight';
             gridBox.style.gridTemplateColumns = 'repeat(48, auto)';
             gridBox.appendChild(content);
         }
@@ -76,13 +69,13 @@ function ninetySix() {
     if (isBtnClicked === false) {
         for (let i = 0; i < 9216; i++) {
             const content = document.createElement('div');
-            content.className='gridSizeNinetySix';
+            content.className = 'gridSizeNinetySix';
             gridBox.style.gridTemplateColumns = 'repeat(96, auto)';
             gridBox.appendChild(content);
 
 
-    }
-    isBtnClicked = true;
+        }
+        isBtnClicked = true;
     }
 }
 
@@ -93,31 +86,101 @@ function refresh() {
 
 
 
-function rainbowBtn(){
-    gridDivs=document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv)=>{
-        individualDiv.addEventListener('mouseover', ()=>{
+function rainbowBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
             individualDiv.classList.add('rainbowColor');
         })
     })
 
 };
 
-function blackBtn(){
-    gridDivs=document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv)=>{
-        individualDiv.addEventListener('mouseover', ()=>{
+function blackBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
             individualDiv.classList.add('blackColor');
         })
     })
 
 };
 
-function eraseBtn(){
-    gridDivs=document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv)=>{
-        individualDiv.addEventListener('mouseover', ()=>{
+function eraseBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
             individualDiv.classList.add('whiteColor');
+        })
+    })
+
+};
+
+function redBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.add('redColor');
+        })
+    })
+
+};
+
+function orangeBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.add('orangeColor');
+        })
+    })
+
+};
+
+function greenkBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.add('greenColor');
+        })
+    })
+
+};
+
+function yellowkBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.add('yellowColor');
+        })
+    })
+
+};
+
+function blueBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.add('blueColor');
+        })
+    })
+
+};
+
+function purpleBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.add('purpleColor');
+        })
+    })
+
+};
+
+function magentaBtn() {
+    gridDivs = document.querySelectorAll('#gridBox > div');
+    gridDivs.forEach((individualDiv) => {
+        individualDiv.addEventListener('mouseover', () => {
+            individualDiv.classList.add('magentaColor');
         })
     })
 

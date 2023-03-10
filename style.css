@@ -203,6 +203,38 @@ button:hover {
 }
 
 .whiteColor{
-    
+    animation-play-state: paused;
     background-color: white;
+}
+
+.redColor{
+    animation-play-state: paused;
+    background-color: red;
+}
+.orangeColor{
+    animation-play-state: paused;
+    background-color: orangered;
+}
+
+.yellowColor{
+    animation-play-state: paused;
+    background-color: yellow;
+}
+.greenColor{
+    animation-play-state: paused;
+    background-color: green;
+}
+
+.blueColor{
+    animation-play-state: paused;
+    background-color: blue;
+}
+
+.purpleColor{
+    animation-play-state: paused;
+    background-color: purple;
+}
+.magentaColor{
+    animation-play-state: paused;
+    background-color: magenta;
 }

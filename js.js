@@ -95,6 +95,7 @@ function eraseBtn() {
 };
 
 function redBtn() {
+    myFunctionTwo();
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
@@ -105,6 +106,7 @@ function redBtn() {
 };
 
 function orangeBtn() {
+    myFunctionTwo();
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
@@ -115,6 +117,7 @@ function orangeBtn() {
 };
 
 function greenBtn() {
+    myFunctionTwo();
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
@@ -125,6 +128,7 @@ function greenBtn() {
 };
 
 function yellowBtn() {
+    myFunctionTwo();
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
@@ -135,6 +139,7 @@ function yellowBtn() {
 };
 
 function blueBtn() {
+    myFunctionTwo();
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
@@ -145,6 +150,7 @@ function blueBtn() {
 };
 
 function purpleBtn() {
+    myFunctionTwo();
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
@@ -155,6 +161,7 @@ function purpleBtn() {
 };
 
 function magentaBtn() {
+    myFunctionTwo();
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {

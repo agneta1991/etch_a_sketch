@@ -1,5 +1,5 @@
 let gridBox = document.getElementById('gridBox');
-let isBtnClicked = false;
+
 
 function myFunction() {
     document.getElementById('myDropdown').classList.toggle('show');
@@ -11,49 +11,56 @@ function myFunctionTwo() {
 }
 
 
-
-
 function sixteen() {
     myFunction();
-    if (isBtnClicked === false) {
-        for (let i = 0; i < 256; i++) {
-            const content = document.createElement('div');
-            content.className = 'gridSizeSixteen';
-            gridBox.style.gridTemplateColumns = 'repeat(16, auto)';
-            gridBox.appendChild(content);
+    let element = document.getElementById("gridBox");
+    while (element.firstChild) {
+      element.removeChild(element.firstChild);
+    };
 
+    for (let i = 0; i < 256; i++) {
+        let content = document.createElement('div');
+        content.classList.add('gridSizeSixteen');
+        gridBox.style.gridTemplateColumns = 'repeat(16, auto)';
+        if (gridBox.getElementsByClassName('gridSizeSixteen').length < 256) {
+            gridBox.appendChild(content);
         }
     }
-    isBtnClicked = true;
 }
+
 
 function fourtyEight() {
     myFunction();
-    if (isBtnClicked === false) {
-        for (let i = 0; i < 2304; i++) {
-            const content = document.createElement('div');
-            content.className = 'gridSizeFourtyEight';
-            gridBox.style.gridTemplateColumns = 'repeat(48, auto)';
+    let element = document.getElementById("gridBox");
+    while (element.firstChild) {
+      element.removeChild(element.firstChild);
+    };
+
+    for (let i = 0; i < 2304; i++) {
+        let content = document.createElement('div');
+        content.classList.add('gridSizeFourtyEight');
+        gridBox.style.gridTemplateColumns = 'repeat(48, auto)';
+        if (document.getElementsByClassName('gridSizeFourtyEight').length < 2304) {
             gridBox.appendChild(content);
         }
     }
-
-    isBtnClicked = true;
-
 }
+
 
 function ninetySix() {
     myFunction();
-    if (isBtnClicked === false) {
-        for (let i = 0; i < 9216; i++) {
-            const content = document.createElement('div');
-            content.className = 'gridSizeNinetySix';
-            gridBox.style.gridTemplateColumns = 'repeat(96, auto)';
+    let element = document.getElementById("gridBox");
+    while (element.firstChild) {
+      element.removeChild(element.firstChild);
+    };
+
+    for (let i = 0; i < 9216; i++) {
+        let content = document.createElement('div');
+        content.classList.add('gridSizeNinetySix');
+        gridBox.style.gridTemplateColumns = 'repeat(96, auto)';
+        if (document.getElementsByClassName('gridSizeNinetySix').length < 9216) {
             gridBox.appendChild(content);
-
-
         }
-        isBtnClicked = true;
     }
 }
 
@@ -78,7 +85,6 @@ function blackBtn() {
     gridDivs = document.querySelectorAll('#gridBox > div');
     gridDivs.forEach((individualDiv) => {
         individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.remove('whiteColor');
             individualDiv.classList.remove('rainbowColor');
             individualDiv.classList.add('blackColor');
         })

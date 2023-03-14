@@ -171,8 +171,19 @@ button:hover {
     background-color: white;
     padding: 1px;
 }
+.gridSizeFourtyEight{
+    border: 1px solid lightgrey;
+    text-align: center;
+    padding: auto;
 
-.gridSizeSixteen, .gridSizeFourtyEight, .gridSizeNinetySix {
+}
+
+.gridSizeNinetySix{
+    border: 1px solid lightgrey;
+    text-align: center;
+    padding: auto;
+}
+.gridSizeSixteen{ 
     border: 1px solid lightgrey;
     text-align: center;
     padding: auto;

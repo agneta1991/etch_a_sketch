@@ -72,7 +72,63 @@ button:hover {
     background-color: white;
 
 }
+.rainbow{
+    background-color: #1ddde8;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+        -webkit-animation: random 0.1s ease-in;
+        animation: random 5s infinite;
+   }
+   @keyframes  random {
+       15% { background-color: red; } 
+       30% { background-color: orangered; } 
+       45% { background-color: yellow; } 
+       60% { background-color: green; }
+       75% { background-color: blue; }
+       90% { background-color: indigo;}  
+   }
 
+.black{
+    animation-play-state: paused;
+    background-color: black;
+}
+
+.white{
+    animation-play-state: paused;
+    background-color: white;
+}
+
+.red{
+    animation-play-state: paused;
+    background-color: red;
+}
+.orange{
+    animation-play-state: paused;
+    background-color: orangered;
+}
+
+.yellow{
+    animation-play-state: paused;
+    background-color: yellow;
+}
+.green{
+    animation-play-state: paused;
+    background-color: green;
+}
+
+.blue{
+    animation-play-state: paused;
+    background-color: blue;
+}
+
+.purple{
+    animation-play-state: paused;
+    background-color: purple;
+}
+.magenta{
+    animation-play-state: paused;
+    background-color: magenta;
+}
 
 .rainbowBtn {
     background: linear-gradient(124deg, #ff2400, #e81d1d, blue, #e3e81d, #1de840, #1ddde8, red, #dd00f3, #dd00f3);
@@ -94,7 +150,7 @@ button:hover {
     }
 }
 
-.blackBtn {
+.black {
     color: white;
     background-color: black;
 }
@@ -135,6 +191,7 @@ button:hover {
 }
 
 .dropdownMenu p {
+    background-color: white;
     font-size: 16px;
     text-align: center;
     color: black;
@@ -196,60 +253,3 @@ button:hover {
 }
 
 
-.rainbowColor{
-    background-color: #1ddde8;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-        -webkit-animation: random 0.1s ease-in;
-        animation: random 5s infinite;
-   }
-   @keyframes  random {
-       15% { background-color: red; } 
-       30% { background-color: orangered; } 
-       45% { background-color: yellow; } 
-       60% { background-color: green; }
-       75% { background-color: blue; }
-       90% { background-color: indigo;}  
-   }
-
-.blackColor{
-    animation-play-state: paused;
-    background-color: black;
-}
-
-.whiteColor{
-    animation-play-state: paused;
-    background-color: white;
-}
-
-.redColor{
-    animation-play-state: paused;
-    background-color: red;
-}
-.orangeColor{
-    animation-play-state: paused;
-    background-color: orangered;
-}
-
-.yellowColor{
-    animation-play-state: paused;
-    background-color: yellow;
-}
-.greenColor{
-    animation-play-state: paused;
-    background-color: green;
-}
-
-.blueColor{
-    animation-play-state: paused;
-    background-color: blue;
-}
-
-.purpleColor{
-    animation-play-state: paused;
-    background-color: purple;
-}
-.magentaColor{
-    animation-play-state: paused;
-    background-color: magenta;
-}

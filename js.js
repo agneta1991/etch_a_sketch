@@ -15,7 +15,7 @@ function sixteen() {
     myFunction();
     let element = document.getElementById("gridBox");
     while (element.firstChild) {
-      element.removeChild(element.firstChild);
+        element.removeChild(element.firstChild);
     };
 
     for (let i = 0; i < 256; i++) {
@@ -33,7 +33,7 @@ function fourtyEight() {
     myFunction();
     let element = document.getElementById("gridBox");
     while (element.firstChild) {
-      element.removeChild(element.firstChild);
+        element.removeChild(element.firstChild);
     };
 
     for (let i = 0; i < 2304; i++) {
@@ -51,7 +51,7 @@ function ninetySix() {
     myFunction();
     let element = document.getElementById("gridBox");
     while (element.firstChild) {
-      element.removeChild(element.firstChild);
+        element.removeChild(element.firstChild);
     };
 
     for (let i = 0; i < 9216; i++) {
@@ -69,113 +69,32 @@ function refresh() {
 }
 
 
-
-
-function rainbowBtn() {
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.add('rainbowColor');
+let buttonP = document.querySelectorAll('#myDropdownTwo > p');
+buttonP.forEach((individualP) => {
+    individualP.addEventListener('click', () => {
+        myFunctionTwo();
+        gridDivs = document.querySelectorAll('#gridBox > div');
+        gridDivs.forEach((individualDiv) => {
+            individualDiv.addEventListener('mouseover', () => {
+                individualDiv.className= '';
+                individualDiv.classList.add(individualP.className);
+            })
         })
     })
+});
 
-};
-
-function blackBtn() {
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.remove('rainbowColor');
-            individualDiv.classList.add('blackColor');
+let buttonBtn = document.querySelectorAll('.containerTwo > button');
+console.log(buttonBtn);
+buttonBtn.forEach((individualBtn)=>{
+    individualBtn.addEventListener('click', () => {
+        gridDivs = document.querySelectorAll('#gridBox > div');
+        gridDivs.forEach((individualDiv) => {
+            individualDiv.addEventListener('mouseover', () => {
+                individualDiv.className = '';
+                individualDiv.classList.add(individualBtn.className);
+            })
         })
-    })
+    });
+})
 
-};
 
-function eraseBtn() {
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.remove('rainbowColor');
-            individualDiv.classList.add('whiteColor');
-        })
-    })
-
-};
-
-function redBtn() {
-    myFunctionTwo();
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.add('redColor');
-        })
-    })
-
-};
-
-function orangeBtn() {
-    myFunctionTwo();
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.add('orangeColor');
-        })
-    })
-
-};
-
-function greenBtn() {
-    myFunctionTwo();
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.add('greenColor');
-        })
-    })
-
-};
-
-function yellowBtn() {
-    myFunctionTwo();
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.add('yellowColor');
-        })
-    })
-
-};
-
-function blueBtn() {
-    myFunctionTwo();
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.add('blueColor');
-        })
-    })
-
-};
-
-function purpleBtn() {
-    myFunctionTwo();
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.add('purpleColor');
-        })
-    })
-
-};
-
-function magentaBtn() {
-    myFunctionTwo();
-    gridDivs = document.querySelectorAll('#gridBox > div');
-    gridDivs.forEach((individualDiv) => {
-        individualDiv.addEventListener('mouseover', () => {
-            individualDiv.classList.add('magentaColor');
-        })
-    })
-
-};

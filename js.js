@@ -84,7 +84,6 @@ buttonP.forEach((individualP) => {
 });
 
 let buttonBtn = document.querySelectorAll('.containerTwo > button');
-console.log(buttonBtn);
 buttonBtn.forEach((individualBtn)=>{
     individualBtn.addEventListener('click', () => {
         gridDivs = document.querySelectorAll('#gridBox > div');

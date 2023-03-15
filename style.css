@@ -171,23 +171,7 @@ button:hover {
     background-color: white;
     padding: 1px;
 }
-.gridSizeFourtyEight{
-    border: 1px solid lightgrey;
-    text-align: center;
-    padding: auto;
 
-}
-
-.gridSizeNinetySix{
-    border: 1px solid lightgrey;
-    text-align: center;
-    padding: auto;
-}
-.gridSizeSixteen{ 
-    border: 1px solid lightgrey;
-    text-align: center;
-    padding: auto;
-}
 .resetBtn{
     background-color: rgba(32, 100, 178, 0.418);
 }
@@ -256,4 +240,10 @@ button:hover {
 
 #myDropdownTwo > p{
     background-color: white;
+}
+
+.gridSizeNinetySix, .gridSizeSixteen, .gridSizeFourtyEight {
+    border: 1px solid lightgrey;
+    text-align: center;
+    padding: auto;
 }
